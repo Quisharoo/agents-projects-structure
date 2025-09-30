@@ -149,10 +149,43 @@ Response (Error):
 }
 ```
 
-### UI/UX Notes (if applicable)
-- Design references: [Link to Figma, screenshots, or prototype]
-- Accessibility requirements: [WCAG level, specific concerns]
-- Responsive design: [Mobile, tablet, desktop considerations]
+### UX Considerations (if user-facing features)
+
+**Review `agents/UX_PRINCIPLES.md` for comprehensive guidelines.**
+
+#### Usability Requirements
+- [ ] Follows Nielsen's 10 usability heuristics
+- [ ] Clear and consistent with existing UI patterns
+- [ ] Provides immediate feedback for all user actions
+- [ ] Shows loading states for async operations
+- [ ] Supports undo/cancel for destructive actions
+
+#### Accessibility Requirements (WCAG 2.1 Level AA minimum)
+- [ ] Keyboard navigation works (Tab, Enter, Esc, Arrow keys)
+- [ ] All interactive elements have focus indicators
+- [ ] Sufficient color contrast (4.5:1 for text, 3:1 for UI components)
+- [ ] Images have alt text; icons have aria-labels
+- [ ] Form inputs have visible labels (not just placeholders)
+- [ ] Screen reader compatible (tested with VoiceOver/NVDA)
+
+#### Error Handling & User Guidance
+- [ ] Validation happens as user types (not just on submit)
+- [ ] Error messages are clear, specific, and actionable
+- [ ] Explain what went wrong and how to fix it
+- [ ] No technical jargon or error codes without explanation
+- [ ] Success messages confirm completed actions
+
+#### Agent-Specific UX (if AI/agent features)
+- [ ] Agent actions are transparent and visible
+- [ ] User has control and override options
+- [ ] Uncertainty is communicated clearly
+- [ ] Context preservation is appropriate
+- [ ] Graceful degradation on failures
+
+#### Design References
+- Design mockups: [Link to Figma, screenshots, or prototype]
+- Design system: [Material Design / HIG / custom]
+- Responsive design: [Mobile-first / desktop-first approach]
 - Browser support: [Required browser versions]
 
 ---
@@ -194,6 +227,14 @@ Response (Error):
 - [ ] Migrations created and committed
 - [ ] Migrations tested (up and down)
 - [ ] Data integrity verified
+
+### UX Quality (for user-facing features)
+- [ ] Usability heuristics followed (see `agents/UX_PRINCIPLES.md`)
+- [ ] Keyboard navigation works completely
+- [ ] Error messages are clear and actionable
+- [ ] Accessibility standards met (WCAG 2.1 AA)
+- [ ] Loading states shown for async operations
+- [ ] Manual UX testing completed
 
 ### Review Ready
 - [ ] All acceptance criteria met

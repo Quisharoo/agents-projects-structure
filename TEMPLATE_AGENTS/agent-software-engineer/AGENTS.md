@@ -73,6 +73,7 @@ AI agents should follow different instruction sets based on the task type:
 - `agents/BUSINESS_REQUIREMENTS.md`: Business requirements and feature descriptions for the project
 - `agents/ROADMAP.md`: Development roadmap, current tasks, and next steps for implementation
 - `agents/ARCHITECTURE.md`: Desired system design, project structure, and architectural standards
+- `agents/UX_PRINCIPLES.md`: UX design principles, usability heuristics, and user experience guidelines
 - `agents/TESTING_PRINCIPLES.md`: Testing strategy, guidelines, and best practices
 - `agents/DEVELOPMENT_WORKFLOW.md`: Software development workflow, testing strategies, and best practices
 - `agents/agent-software-engineer/PROTOTYPING_INSTRUCTIONS.md`: Specific instructions for prototyping and discovery tasks
@@ -139,6 +140,16 @@ This applies regardless of your tech stack:
 - Improve naming
 - Add missing tests
 
+### 6. User Experience Quality (Universal)
+**UX is not optional - it's a core quality metric**
+
+- Follow usability heuristics from `agents/UX_PRINCIPLES.md`
+- Verify all user-facing features against UX checklist
+- Ensure accessibility standards (WCAG 2.1 AA minimum)
+- Test with keyboard navigation and screen readers
+- Provide clear error messages with actionable next steps
+- Make agent actions transparent and user-controllable
+
 ---
 
 ## Implementation Checklist
@@ -148,9 +159,11 @@ Before marking any task complete:
 - [ ] Read the task file thoroughly
 - [ ] Understand requirements and acceptance criteria
 - [ ] Review relevant architecture docs
+- [ ] Review UX principles if implementing user-facing features
 - [ ] Implement following mode-specific instructions
 - [ ] Extract business logic to services
 - [ ] Write/update tests
+- [ ] Verify UX quality (usability heuristics, accessibility, error handling)
 - [ ] Run all tests and verify they pass
 - [ ] Run linter and fix issues
 - [ ] Build project and verify success

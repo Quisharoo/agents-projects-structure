@@ -54,6 +54,7 @@ These documents provide critical context for all agents:
 - `agents/BUSINESS_REQUIREMENTS.md`: Contains the business requirements and feature descriptions for the project
 - `agents/ROADMAP.md`: Contains the development roadmap, current tasks, and next steps for project implementation
 - `agents/ARCHITECTURE.md`: Defines the desired system design, project structure, and architectural standards
+- `agents/UX_PRINCIPLES.md`: UX design principles, usability heuristics, and user experience guidelines
 - `agents/TESTING_PRINCIPLES.md`: Outlines the testing strategy, guidelines, and best practices
 - `agents/DEVELOPMENT_WORKFLOW.md`: Detailed software development workflow, testing strategies, and best practices
 

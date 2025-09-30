@@ -44,8 +44,9 @@ your-project/
 │   ├── AGENTS.md                    # Main entry point - role selection
 │   ├── BUSINESS_REQUIREMENTS.md     # What to build
 │   ├── ARCHITECTURE.md              # How to build it
-│   ├── DEVELOPMENT_WORKFLOW.md      # Process and Definition of Done
+│   ├── UX_PRINCIPLES.md             # UX design and usability standards
 │   ├── TESTING_PRINCIPLES.md        # Testing standards
+│   ├── DEVELOPMENT_WORKFLOW.md      # Process and Definition of Done
 │   ├── ROADMAP.md                   # Current plan and history
 │   ├── agent-product-manager/
 │   │   └── AGENTS.md                # PM-specific instructions
@@ -115,6 +116,12 @@ Then customize core files with your project details:
 - Define your tech stack
 - Specify coding standards and patterns
 - Include architecture diagrams if helpful
+
+#### `agents/UX_PRINCIPLES.md`
+- Review and adapt UX guidelines for your target platform
+- Specify which design system to follow (Material Design / HIG)
+- Define accessibility requirements (WCAG level)
+- Add brand-specific design guidelines
 
 #### `agents/TESTING_PRINCIPLES.md`
 - Adapt testing approach to your stack (keep universal principles)

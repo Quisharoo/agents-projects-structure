@@ -46,6 +46,13 @@ Use **Delivery/Implementation Mode** when:
 - Component tests for UI (where applicable)
 - All tests must pass before completion
 
+### User Experience Quality
+- Follow usability heuristics from `agents/UX_PRINCIPLES.md`
+- Ensure all user-facing features are intuitive and accessible
+- Provide clear error messages with actionable guidance
+- Support keyboard navigation and screen readers
+- Test UX manually before marking complete
+
 ---
 
 ## Required Reading
@@ -53,6 +60,7 @@ Use **Delivery/Implementation Mode** when:
 **Before starting any implementation task, review:**
 
 - `agents/ARCHITECTURE.md` - System architecture and patterns
+- `agents/UX_PRINCIPLES.md` - UX design principles and usability heuristics (for user-facing features)
 - `agents/TESTING_PRINCIPLES.md` - Testing standards and practices
 - `agents/DEVELOPMENT_WORKFLOW.md` - Development process and workflow
 - `agents/BUSINESS_REQUIREMENTS.md` - Business context and requirements
@@ -302,6 +310,14 @@ def create_user(request):
 - Test edge conditions
 - Verify UI responsiveness (if applicable)
 
+### 9. UX Verification (for user-facing features)
+- Review against usability heuristics from `agents/UX_PRINCIPLES.md`
+- Test keyboard navigation (Tab, Enter, Esc)
+- Verify error messages are clear and actionable
+- Check accessibility (color contrast, alt text, labels)
+- Ensure loading states are shown for async operations
+- Confirm all interactive elements have appropriate feedback
+
 ---
 
 ## Definition of Done
@@ -329,6 +345,7 @@ def create_user(request):
   ```
 - [ ] **Documentation updated** (if needed)
 - [ ] **Manual testing complete** (verified all acceptance criteria)
+- [ ] **UX quality verified** (for user-facing features - check against `agents/UX_PRINCIPLES.md`)
 - [ ] **Code review ready** (if applicable to your workflow)
 
 ---

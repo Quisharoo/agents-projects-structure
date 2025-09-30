@@ -189,7 +189,49 @@ Never:
 
 ---
 
-## 5. Data Flow Architecture
+## 5. UX Design Principles (Universal)
+
+**User experience is a core architectural concern, not an afterthought.**
+
+For comprehensive UX guidelines, see `agents/UX_PRINCIPLES.md`. Key architectural implications:
+
+### Usability by Default
+- Design APIs and interfaces that are intuitive and hard to misuse
+- Provide clear error messages with actionable guidance
+- Follow established design patterns (Material Design, HIG)
+- Ensure consistency across all user touchpoints
+
+### Accessibility First
+- Meet WCAG 2.1 Level AA standards minimum
+- Support keyboard navigation for all interactive elements
+- Provide appropriate ARIA labels and semantic HTML
+- Ensure sufficient color contrast and readable fonts
+- Test with screen readers during development
+
+### Performance as UX
+- Show loading states for async operations (never leave users guessing)
+- Optimize for perceived performance (show content progressively)
+- Set performance budgets and monitor Core Web Vitals
+- Implement proper caching strategies
+
+### Error Handling as UX
+- Validate input early (client-side before server-side)
+- Prevent errors rather than just catching them
+- Show error states with clear recovery paths
+- Never expose technical error details to end users
+- Log detailed errors for debugging, show simple messages to users
+
+### Agent Transparency
+- Make AI/agent actions visible and understandable
+- Provide user control and override options
+- Show confidence levels or uncertainty when appropriate
+- Allow users to undo or modify agent decisions
+
+**Reference:** All agents must verify UX quality against `agents/UX_PRINCIPLES.md` before marking features complete.
+
+---
+
+## 6. Data Flow Architecture
 
 ### [Primary Flow Name] (e.g., Server-Side Rendering, API Request, etc.)
 ```

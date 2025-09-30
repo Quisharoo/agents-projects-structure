@@ -140,6 +140,13 @@ A task is complete only when ALL criteria are met:
   - API documentation (if contract changed)
   - Architecture docs (if patterns changed)
   - README or guides (if setup changed)
+- [ ] **UX quality verified** (for user-facing features)
+  - Follows usability heuristics from `agents/UX_PRINCIPLES.md`
+  - Keyboard navigation works (Tab, Enter, Esc)
+  - Error messages are clear and actionable
+  - Accessibility standards met (WCAG 2.1 AA)
+  - Loading states shown for async operations
+  - Manual UX testing completed
 
 ### When Tests Can Be a Separate Task
 
