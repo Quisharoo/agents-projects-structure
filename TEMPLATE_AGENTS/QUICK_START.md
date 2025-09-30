@@ -269,10 +269,12 @@ Commands:
 
 ## Need Help?
 
+- 🚀 Use `agents-init` for guided setup
 - 📖 Read the main [README.md](../README.md) for comprehensive guide
-- 📁 Check [EXAMPLE_AGENTS_MDS/](../EXAMPLE_AGENTS_MDS/) for real-world example (Leader's Metrics project)
 - 🔗 Review [original article](https://www.practicalengineering.management/p/prototyping-with-ai-agents-pt1) by Mirek Stanek
 
 ---
 
-**Ready to start? Copy the template and customize those 3 files!** 🚀
+**Ready to start?**
+- **Easy way**: Run `agents-init` for automatic setup
+- **Manual way**: Copy the template and customize those 3 files! 🚀

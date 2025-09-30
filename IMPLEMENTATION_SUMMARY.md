@@ -12,9 +12,10 @@ A complete, generic AI agent development framework based on Mirek Stanek's metho
 agents-project-structure/
 ├── README.md                          # Main documentation (comprehensive guide)
 ├── IMPLEMENTATION_SUMMARY.md          # This file
-├── EXAMPLE_AGENTS_MDS/                # Real-world example (Leader's Metrics)
-│   └── [existing example files]
-└── TEMPLATE_AGENTS/                   # 🆕 Generic template for any project
+├── agents-init.js                     # 🆕 Interactive initialization script
+├── tech-stack-presets.js              # Tech stack configuration presets
+├── package.json                       # Node.js dependencies for init script
+└── TEMPLATE_AGENTS/                   # Generic template for any project
     ├── QUICK_START.md                 # 5-minute setup guide
     ├── AGENTS.md                      # Main entry point with role selection
     ├── BUSINESS_REQUIREMENTS.md       # What to build
@@ -369,9 +370,10 @@ Additionally:
 - ✅ **Multi-framework examples** (TypeScript, Python, Go, Ruby)
 - ✅ **Clear invocation instructions** in every agent file
 - ✅ **Definition of Done** consistently referenced
+- ✅ **Interactive init script** for automated setup
 - ✅ **Quick start guide** for 5-minute setup
 - ✅ **Comprehensive README** with examples
-- ✅ **Real-world example** preserved (EXAMPLE_AGENTS_MDS)
+- ✅ **Tech stack presets** for common frameworks
 
 ---
 
@@ -379,10 +381,9 @@ Additionally:
 
 ### For New Users
 1. Read `README.md` - Understand the framework
-2. Read `QUICK_START.md` - Get set up fast
-3. Review `EXAMPLE_AGENTS_MDS/` - See real usage
-4. Customize 3 core files - Make it yours
-5. Try first agent - Learn by doing
+2. Run `agents-init` - Automated guided setup
+3. Review generated files - See customized output
+4. Try first agent - Learn by doing
 
 ### For Advanced Users
 1. Customize all template files

@@ -1,0 +1,31 @@
+{
+  "name": "@agents-framework/init",
+  "version": "1.0.0",
+  "description": "Interactive CLI to initialize AI agent development framework for your project",
+  "main": "agents-init.js",
+  "bin": {
+    "agents-init": "./agents-init.js"
+  },
+  "scripts": {
+    "init": "node agents-init.js"
+  },
+  "keywords": [
+    "ai",
+    "agents",
+    "development",
+    "framework",
+    "cli",
+    "initialization"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "inquirer": "^9.2.12",
+    "chalk": "^5.3.0",
+    "fs-extra": "^11.2.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
+

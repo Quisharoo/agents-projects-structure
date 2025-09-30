@@ -63,18 +63,39 @@ your-project/
 
 ## 🚀 Quick Start
 
-### 1. Copy the Template
+### Option 1: Interactive Setup (Recommended) 🎯
 
-Copy the `TEMPLATE_AGENTS/` folder to your project root and rename it to `agents/`:
+Use the interactive initialization script for a guided 5-minute setup:
+
+```bash
+# Navigate to your project directory
+cd your-project
+
+# Run the init script (requires Node.js 16+)
+npm install -g @agents-framework/init
+agents-init
+
+# Or run directly from this repo
+node /path/to/agents-project-structure/agents-init.js
+```
+
+The script will:
+- ✅ Prompt for project details (name, description, target users)
+- ✅ Let you choose from common tech stack presets (Next.js, Django, Rails, Go, Express)
+- ✅ Guide you through defining MVP capabilities
+- ✅ Optionally create your first task
+- ✅ Generate fully customized agent files with all placeholders replaced
+
+### Option 2: Manual Setup
+
+If you prefer manual configuration:
 
 ```bash
 cp -r TEMPLATE_AGENTS your-project/agents
 cp -r TEMPLATE_AGENTS/tasks your-project/tasks
 ```
 
-### 2. Customize Core Files
-
-Edit these files with your project details:
+Then customize core files with your project details:
 
 #### `agents/AGENTS.md`
 - Replace `[YOUR_PROJECT_NAME]` with your project name
@@ -428,7 +449,7 @@ project/
 ## 📖 Additional Resources
 
 - [Original Article by Mirek Stanek](https://www.practicalengineering.management/p/prototyping-with-ai-agents-pt1)
-- [Example Project](./EXAMPLE_AGENTS_MDS/) - See a real implementation (Leader's Metrics)
+- [Interactive Init Tool](./agents-init.js) - Guided setup in 5 minutes
 
 ## 🤝 Contributing
 
@@ -443,4 +464,4 @@ This framework is provided as-is for any use. Attribution to Mirek Stanek's orig
 
 ---
 
-**Questions or Issues?** Check the example in `EXAMPLE_AGENTS_MDS/` or refer back to the original article.
+**Questions or Issues?** Run `agents-init` for guided setup or refer back to the original article.
