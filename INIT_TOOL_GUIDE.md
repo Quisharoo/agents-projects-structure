@@ -8,18 +8,24 @@ A guided CLI tool to initialize your AI agent development framework in minutes.
 - Node.js 16.0.0 or higher
 - npm (comes with Node.js)
 
-### Setup
+### Setup (First Time Only)
 
-1. **Install dependencies** (first time only):
-   ```bash
-   cd /path/to/agents-project-structure
-   npm install
-   ```
+**IMPORTANT**: Before running the script, you must install dependencies:
 
-2. **Make script executable** (Unix/Mac):
-   ```bash
-   chmod +x agents-init.js
-   ```
+```bash
+# Navigate to the agents-project-structure directory
+cd /path/to/agents-project-structure
+
+# Install dependencies (inquirer, chalk, fs-extra)
+npm install
+```
+
+This only needs to be done once. The script will check for dependencies and show a helpful error if they're missing.
+
+**Optional** - Make script executable (Unix/Mac):
+```bash
+chmod +x agents-init.js
+```
 
 ## Usage
 

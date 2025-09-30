@@ -8,6 +8,20 @@
  * by prompting for project details and generating customized templates.
  */
 
+// Check if dependencies are installed
+try {
+  require.resolve('inquirer');
+  require.resolve('chalk');
+  require.resolve('fs-extra');
+} catch (error) {
+  console.error('\n❌ Error: Required dependencies not installed.\n');
+  console.error('Please run the following command first:\n');
+  console.error('  cd ' + __dirname);
+  console.error('  npm install\n');
+  console.error('Then try running this script again.\n');
+  process.exit(1);
+}
+
 const inquirer = require('inquirer');
 const fs = require('fs-extra');
 const path = require('path');

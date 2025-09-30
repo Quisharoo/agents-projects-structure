@@ -68,16 +68,18 @@ your-project/
 Use the interactive initialization script for a guided 5-minute setup:
 
 ```bash
-# Navigate to your project directory
-cd your-project
+# First time: Install dependencies in the agents-project-structure directory
+cd /path/to/agents-project-structure
+npm install
+
+# Then navigate to your project directory
+cd /path/to/your-project
 
 # Run the init script (requires Node.js 16+)
-npm install -g @agents-framework/init
-agents-init
-
-# Or run directly from this repo
 node /path/to/agents-project-structure/agents-init.js
 ```
+
+**Note**: You only need to run `npm install` once in the agents-project-structure directory.
 
 The script will:
 - ✅ Prompt for project details (name, description, target users)
