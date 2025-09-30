@@ -33,23 +33,40 @@ async function main() {
   console.log(chalk.blue.bold('\n🤖 AI Agent Framework Initializer'));
   console.log(chalk.blue('==================================\n'));
   console.log('Let\'s set up your AI-assisted development environment!\n');
+  console.log(chalk.dim('💡 Tip: You can review and edit your answers before generating files.\n'));
 
   try {
     // Step 1: Project Setup
-    const projectAnswers = await promptProjectSetup();
+    let projectAnswers = await promptProjectSetup();
     
     // Step 2: Tech Stack Selection
-    const techStackAnswers = await promptTechStack();
+    let techStackAnswers = await promptTechStack();
     
     // Step 3: Feature Planning (optional)
-    const featureAnswers = await promptFeaturePlanning();
+    let featureAnswers = await promptFeaturePlanning();
     
-    // Step 4: Show Summary and Confirm
-    const confirmation = await showSummaryAndConfirm(projectAnswers, techStackAnswers, featureAnswers);
+    // Step 4: Show Summary and Allow Editing
+    let confirmation;
+    let editLoop = true;
     
-    if (!confirmation.proceed) {
-      console.log(chalk.yellow('\n❌ Initialization cancelled.'));
-      process.exit(0);
+    while (editLoop) {
+      confirmation = await showSummaryAndConfirm(projectAnswers, techStackAnswers, featureAnswers);
+      
+      if (confirmation.proceed) {
+        editLoop = false;
+      } else if (confirmation.action === 'cancel') {
+        console.log(chalk.yellow('\n❌ Initialization cancelled.'));
+        process.exit(0);
+      } else if (confirmation.action === 'edit-project') {
+        console.log(chalk.yellow('\n📝 Re-entering project details...\n'));
+        projectAnswers = await promptProjectSetup();
+      } else if (confirmation.action === 'edit-tech') {
+        console.log(chalk.yellow('\n📝 Re-selecting tech stack...\n'));
+        techStackAnswers = await promptTechStack();
+      } else if (confirmation.action === 'edit-features') {
+        console.log(chalk.yellow('\n📝 Re-defining features...\n'));
+        featureAnswers = await promptFeaturePlanning();
+      }
     }
     
     // Step 5: Generate Files
@@ -304,14 +321,23 @@ async function showSummaryAndConfirm(projectAnswers, techStackAnswers, featureAn
   }
   console.log();
   
-  return await inquirer.prompt([
+  const { action } = await inquirer.prompt([
     {
-      type: 'confirm',
-      name: 'proceed',
-      message: 'Generate?',
-      default: true
+      type: 'list',
+      name: 'action',
+      message: 'What would you like to do?',
+      choices: [
+        { name: 'Generate files (proceed)', value: 'proceed' },
+        { name: 'Edit project details', value: 'edit-project' },
+        { name: 'Edit tech stack', value: 'edit-tech' },
+        { name: 'Edit features', value: 'edit-features' },
+        { name: 'Cancel and exit', value: 'cancel' }
+      ],
+      default: 'proceed'
     }
   ]);
+  
+  return { proceed: action === 'proceed', action };
 }
 
 // Generate Agent Framework Files

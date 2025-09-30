@@ -87,9 +87,16 @@ Each preset automatically fills in:
 - Define 3-5 core capabilities
 - Optionally define your first feature → generates TASK-001
 
-### 4. Confirmation
+### 4. Review and Edit
 - Shows summary of all choices
-- Confirms before generating files
+- Options to:
+  - Generate files (proceed)
+  - Edit project details
+  - Edit tech stack
+  - Edit features
+  - Cancel and exit
+- Loop back to any section to make changes
+- Only generates files when you're satisfied
 
 ### 5. File Generation
 Creates fully customized files with all placeholders replaced:
@@ -163,7 +170,14 @@ Stack: Next.js 15 + TypeScript + PostgreSQL
 Features: 3 core capabilities defined
 Tasks: 1 task created
 
-Generate? [Y/n]: y
+What would you like to do?
+  ❯ Generate files (proceed)
+    Edit project details
+    Edit tech stack
+    Edit features
+    Cancel and exit
+
+[Selected: Generate files (proceed)]
 
 ✨ Creating files...
   ✓ agents/AGENTS.md
@@ -194,7 +208,9 @@ Done! Your AI agent framework is ready for task-tracker. 🎉
 ### Safety
 - Confirms before overwriting existing files
 - Shows complete summary before generation
-- Can cancel at any time
+- Can cancel at any time with Ctrl+C
+- Can edit any section before final generation
+- Multiple review loops supported
 
 ### Customization
 - Use presets as-is for speed
