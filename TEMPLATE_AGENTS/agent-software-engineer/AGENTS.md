@@ -168,6 +168,7 @@ Before marking any task complete:
 - [ ] Run linter and fix issues
 - [ ] Build project and verify success
 - [ ] Update documentation if needed
+- [ ] Provide implementation summary (what changed, what users can now do, what's pending)
 - [ ] Verify all Definition of Done criteria met
 
 ---

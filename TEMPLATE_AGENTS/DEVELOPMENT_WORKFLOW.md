@@ -156,6 +156,11 @@ A task is complete only when ALL criteria are met:
   - Accessibility standards met (WCAG 2.1 AA)
   - Loading states shown for async operations
   - Manual UX testing completed
+- [ ] **Implementation summary provided**
+  - What changed: files modified/created, technical changes made
+  - What users can now do: new functionality, working user flows, problems solved
+  - What's still pending: incomplete functionality, blockers, next steps
+  - What's out of scope: intentionally excluded features and why
 
 ### When Tests Can Be a Separate Task
 

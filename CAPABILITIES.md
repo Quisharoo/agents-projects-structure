@@ -1,6 +1,12 @@
 # Framework Capabilities
 
-Quick reference for what this framework can do, what each agent does, and what's out of scope.
+**Purpose:** This document describes what the **AI Agent Development Framework itself** provides. It's a reference for developers evaluating or using this framework.
+
+**Note:** This is NOT about how agents report their work. For agent implementation summaries, see the new Step 11 in `TEMPLATE_AGENTS/agent-software-engineer/IMPLEMENTATION_INSTRUCTIONS.md`.
+
+---
+
+Quick reference for what this framework can do, what each agent persona provides, and what's out of scope.
 
 ## What Has Been Implemented
 

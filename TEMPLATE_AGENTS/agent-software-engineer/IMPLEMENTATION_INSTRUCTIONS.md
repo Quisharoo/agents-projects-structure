@@ -327,13 +327,36 @@ def create_user(request):
 
 **Do not skip this step.** Passing unit/integration tests ≠ working feature in browser.
 
-### 9. UX Verification (for user-facing features)
+### 10. UX Verification (for user-facing features)
 - Review against usability heuristics from `agents/UX_PRINCIPLES.md`
 - Test keyboard navigation (Tab, Enter, Esc)
 - Verify error messages are clear and actionable
 - Check accessibility (color contrast, alt text, labels)
 - Ensure loading states are shown for async operations
 - Confirm all interactive elements have appropriate feedback
+
+### 11. Provide Implementation Summary
+After completing the task, provide a concise summary:
+
+**What Changed:**
+- List specific files modified/created
+- Summarize the technical changes made
+
+**User Capabilities (What users can now do):**
+- What new functionality is available?
+- What user flows now work?
+- What problems are now solved?
+
+**Still Pending (What's not working yet):**
+- What functionality is still incomplete?
+- What's blocked or dependent on other work?
+- What needs to be addressed next?
+
+**Out of Scope (Intentionally excluded):**
+- What was considered but not included in this task?
+- Why was it deferred or excluded?
+
+This summary helps maintain clarity on project state and sets proper expectations.
 
 ---
 
@@ -362,7 +385,9 @@ def create_user(request):
   ```
 - [ ] **Documentation updated** (if needed)
 - [ ] **Manual testing complete** (verified all acceptance criteria)
-- [ ] **Browser testing complete** (all user-facing features tested in actual browsers)- [ ] **UX quality verified** (for user-facing features - check against `agents/UX_PRINCIPLES.md`)
+- [ ] **Browser testing complete** (all user-facing features tested in actual browsers)
+- [ ] **UX quality verified** (for user-facing features - check against `agents/UX_PRINCIPLES.md`)
+- [ ] **Implementation summary provided** (what changed, what users can now do, what's pending, what's out of scope)
 - [ ] **Code review ready** (if applicable to your workflow)
 
 ---
