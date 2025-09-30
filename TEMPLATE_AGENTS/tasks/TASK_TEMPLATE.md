@@ -90,6 +90,32 @@
 - [ ] Test [form submission]
 - [ ] Test [accessibility]
 
+### Browser/Functional Testing Required (MANDATORY for user-facing features)
+
+**Before marking task complete, manually verify in browser:**
+
+- [ ] Feature tested in actual browser (not just automated tests)
+- [ ] Complete user flow works end-to-end
+- [ ] Forms submit correctly with real data
+- [ ] Invalid data shows appropriate errors
+- [ ] Navigation between views works
+- [ ] Loading/pending states visible during async operations
+- [ ] No console errors in browser developer tools
+- [ ] Tested on primary browsers:
+  - [ ] Chrome/Edge
+  - [ ] Firefox
+  - [ ] Safari (if applicable)
+- [ ] Mobile responsive (if applicable)
+- [ ] Screenshots/recording captured for reference (optional)
+
+**Test Scenarios:**
+- Happy path: [Describe expected user flow]
+- Error cases: [List error scenarios to test]
+- Edge cases: [Any boundary conditions]
+
+**Browser Testing Notes:**
+[Document any browser-specific issues, workarounds, or observations]
+
 **Test files to create/modify:**
 - `[path/to/component-test]`
 

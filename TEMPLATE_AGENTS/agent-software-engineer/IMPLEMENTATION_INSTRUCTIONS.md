@@ -310,6 +310,23 @@ def create_user(request):
 - Test edge conditions
 - Verify UI responsiveness (if applicable)
 
+### 9. Browser/Functional Testing (MANDATORY for user-facing features)
+- Open feature in actual browser (not just tests passing)
+- Test complete user flows end-to-end with real interactions
+- Verify forms submit and handle data correctly
+- Test navigation between pages/components
+- Trigger and verify error states with invalid data
+- Check browser console for errors (should be none)
+- Test on target browsers:
+  - Chrome/Edge (latest)
+  - Firefox (latest)
+  - Safari (latest, if targeting Mac/iOS)
+- Verify mobile responsive behavior (if applicable)
+- Confirm loading states appear during async operations
+- Screenshots or screen recording for complex features (optional but recommended)
+
+**Do not skip this step.** Passing unit/integration tests ≠ working feature in browser.
+
 ### 9. UX Verification (for user-facing features)
 - Review against usability heuristics from `agents/UX_PRINCIPLES.md`
 - Test keyboard navigation (Tab, Enter, Esc)
@@ -345,7 +362,7 @@ def create_user(request):
   ```
 - [ ] **Documentation updated** (if needed)
 - [ ] **Manual testing complete** (verified all acceptance criteria)
-- [ ] **UX quality verified** (for user-facing features - check against `agents/UX_PRINCIPLES.md`)
+- [ ] **Browser testing complete** (all user-facing features tested in actual browsers)- [ ] **UX quality verified** (for user-facing features - check against `agents/UX_PRINCIPLES.md`)
 - [ ] **Code review ready** (if applicable to your workflow)
 
 ---

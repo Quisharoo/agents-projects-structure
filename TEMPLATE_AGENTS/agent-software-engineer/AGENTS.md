@@ -164,7 +164,7 @@ Before marking any task complete:
 - [ ] Extract business logic to services
 - [ ] Write/update tests
 - [ ] Verify UX quality (usability heuristics, accessibility, error handling)
-- [ ] Run all tests and verify they pass
+- [ ] Browser test all user-facing features (mandatory - verify in actual browser)- [ ] Run all tests and verify they pass
 - [ ] Run linter and fix issues
 - [ ] Build project and verify success
 - [ ] Update documentation if needed

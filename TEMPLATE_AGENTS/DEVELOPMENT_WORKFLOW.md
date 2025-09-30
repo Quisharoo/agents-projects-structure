@@ -140,6 +140,15 @@ A task is complete only when ALL criteria are met:
   - API documentation (if contract changed)
   - Architecture docs (if patterns changed)
   - README or guides (if setup changed)
+- [ ] **Browser/functional testing completed** (MANDATORY for user-facing features)
+  - Feature manually tested in actual browser (not just unit/integration tests)
+  - All user flows work end-to-end as intended
+  - Forms submit correctly with real data
+  - Navigation works as expected
+  - Error states tested by triggering real errors
+  - Tested on target browsers (Chrome, Firefox, Safari minimum)
+  - Mobile responsive behavior verified if applicable
+  - No console errors in browser developer tools
 - [ ] **UX quality verified** (for user-facing features)
   - Follows usability heuristics from `agents/UX_PRINCIPLES.md`
   - Keyboard navigation works (Tab, Enter, Esc)
